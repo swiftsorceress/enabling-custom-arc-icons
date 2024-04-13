@@ -16,7 +16,10 @@ So basically, these are the steps to get custom icons working again:
 5. ﻿﻿﻿In the "U= plist" file, you will need to delete the line starting with "flags-" and then save the file. This line is connected to resetting the app icon but I've not looked into how they're connected.
 6. ﻿﻿﻿Now, close the file and right click on the folder titled "4NLB" and select "Get Info".
 7. Check the box that says "Locked" for the "4NLB" folder. This prevents Arc from reverting the changes in the .plist file.
-8. You should now be able to replace the icon in Applications by right clicking, selecting "Get Info", and dragging the new .icns file.
+8. Find Arc in the applications folder
+9. Right click and select "Show Package Contents"
+10. Go to Contents > PlugIns, and then delete the DockTilePlugin.plugin file
+11. You should now be able to replace the icon in Applications by right clicking, selecting "Get Info", and dragging the new .icns file.
 
 
 
